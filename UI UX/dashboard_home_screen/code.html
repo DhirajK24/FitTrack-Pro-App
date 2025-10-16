@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .shimmer {
+        background: linear-gradient(
+          110deg,
+          #ffffff 8%,
+          #f0f0f0 18%,
+          #ffffff 33%
+        );
+        background-size: 200% 100%;
+        animation: 1.5s shine linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .dark .shimmer {
+        background: linear-gradient(
+          110deg,
+          #ffffff 8%,
+          #e2e8f0 18%,
+          #ffffff 33%
+        );
+        background-size: 200% 100%;
+        animation: 1.5s shine linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @keyframes shine {
+        to {
+          background-position-x: -200%;
+        }
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+<div class="flex min-h-screen flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="rounded-full p-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+<h1 class="text-xl font-bold">
+<span class="text-primary">Fit</span>Track
+        </h1>
+<button class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full">
+<img alt="Profile Avatar" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2TfMOp7qTscqmiAEg3XFUPbTNPUWB2NNRmDqpXQH-1VoXWQKrKenY74FgYjh7Hgs2NL-GPbuDXAlEIhtDuYeAYyoctdcCNV18F4Revfre1P8IZWVNUtNnsiI7LFXpWk3lqZzYlT6NiGrF3njjYFxMeg2eC3K3swYRQdhg5LZNiGwq3B7iqOg2OkZZjbZDDQlwURG0yHC7KUue4chfnc5QCBwYra5sFI5dHtS7uzeppT4Wv2vZyxWKOfNAVPsZE--X7PZGp4M_95M6"/>
+</button>
+</header>
+<main class="flex-1 p-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 flex cursor-pointer flex-col overflow-hidden rounded-xl bg-zinc-100 shadow-md transition-transform duration-200 hover:scale-[1.02] dark:bg-zinc-900">
+<div class="h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxhQrF7nKn3bpOa14DkCRQe6ifaa6A9Rww9hDS4eJ1Ko-wqPVs6rIDampadk2-yz8RehklEKkhJsHGWsxCPx9CttmHM2eDOf1MPuEFiBTaBb5GYgqSglzurHoGPcIItP60pQaycmpoEb0KRu4RQysTM_35d71yBQ0gKUVhcKmR3_uEhSVd2FmNDThMMl0RCN4xC3ySlPhxLf8_9vPrsaEDsLUh_ZkRwWRiEB65C4VYc0N5qYZqaVcD5Y-8LtTgGr7J877X7fBWUHr_");'></div>
+<div class="flex flex-col gap-3 p-4">
+<div>
+<p class="text-xs font-medium uppercase tracking-wider text-primary">
+                  Today's Workout
+                </p>
+<h2 class="text-lg font-bold text-zinc-900 dark:text-white">
+                  Full Body Strength
+                </h2>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-sm text-zinc-600 dark:text-zinc-400">
+                  45 min · 5 exercises
+                </p>
+<button class="rounded-full bg-primary px-5 py-2 text-sm font-bold text-background-dark transition-opacity hover:opacity-90">
+                  Start
+                </button>
+</div>
+</div>
+</div>
+<div class="col-span-2 cursor-pointer rounded-xl bg-zinc-100 p-4 shadow-md transition-transform duration-200 hover:scale-[1.02] dark:bg-zinc-900">
+<div class="mb-2">
+<p class="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                Weekly Activity
+              </p>
+<p class="text-2xl font-bold text-zinc-900 dark:text-white">
+                1,200 <span class="text-base font-normal">kcal</span>
+</p>
+</div>
+<div class="grid h-32 grid-cols-7 items-end gap-2">
+<div class="group flex flex-col items-center gap-1" data-value="50%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 50%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">M</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="90%">
+<div class="w-full rounded-full bg-primary transition-colors group-hover:bg-primary/50" style="height: 90%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">T</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="80%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 80%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">W</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="50%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 50%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">T</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="40%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 40%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">F</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="30%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 30%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">S</p>
+</div>
+<div class="group flex flex-col items-center gap-1" data-value="30%">
+<div class="w-full rounded-full bg-zinc-200 transition-colors group-hover:bg-primary/50 dark:bg-zinc-700" style="height: 30%"></div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">S</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-900">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">
+                water_drop
+              </span>
+</div>
+<div>
+<p class="font-bold text-zinc-900 dark:text-white">
+                Water Intake
+              </p>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">
+                2.1 / 3L
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-900">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl"> bed </span>
+</div>
+<div>
+<p class="font-bold text-zinc-900 dark:text-white">
+                Sleep
+              </p>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">
+                7h 32m
+              </p>
+</div>
+</div>
+<div class="col-span-2 mt-4 text-center">
+<p class="text-lg font-medium italic">
+<span class="shimmer">"The only bad workout is the one that didn't happen."</span>
+</p>
+<p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+              - Anonymous
+            </p>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

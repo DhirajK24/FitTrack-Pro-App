@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex min-h-screen flex-col">
+<header class="flex justify-end p-4">
+<button class="text-gray-600 dark:text-gray-400">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+</header>
+<main class="flex-grow px-6 py-8">
+<h1 class="text-center text-3xl font-bold text-gray-900 dark:text-white">Create your account</h1>
+<div class="mt-8 flex flex-col items-center">
+<button class="relative mb-6">
+<div class="h-24 w-24 rounded-full bg-background-dark/50 dark:bg-background-light/10 flex items-center justify-center">
+<svg class="h-10 w-10 text-gray-400 dark:text-gray-500" fill="currentColor" height="40" viewBox="0 0 256 256" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V158.75l-26.07-26.06a16,16,0,0,0-22.63,0l-20,20-44-44a16,16,0,0,0-22.62,0L40,149.37V56ZM40,172l52-52,80,80H40Zm176,28H194.63l-36-36,20-20L216,181.38V200ZM144,100a12,12,0,1,1,12,12A12,12,0,0,1,144,100Z"></path>
+</svg>
+</div>
+<div class="absolute bottom-0 right-0 flex h-8 w-8 items-center justify-center rounded-full bg-primary">
+<svg class="h-5 w-5 text-background-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+</svg>
+</div>
+</button>
+</div>
+<form class="space-y-4">
+<div>
+<label class="sr-only" for="email">Email</label>
+<input class="w-full rounded-lg border-transparent bg-background-dark/50 dark:bg-background-light/10 p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="email" placeholder="Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input class="w-full rounded-lg border-transparent bg-background-dark/50 dark:bg-background-light/10 p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="password" placeholder="Password" type="password"/>
+</div>
+<div>
+<label class="sr-only" for="confirm-password">Confirm Password</label>
+<input class="w-full rounded-lg border-transparent bg-background-dark/50 dark:bg-background-light/10 p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="confirm-password" placeholder="Confirm Password" type="password"/>
+</div>
+<div class="flex items-center pt-2">
+<input class="h-5 w-5 rounded border-gray-300 dark:border-gray-600 bg-background-dark/50 dark:bg-background-light/10 text-primary focus:ring-primary" id="terms" type="checkbox"/>
+<label class="ml-3 text-sm text-gray-600 dark:text-gray-400" for="terms">
+              I agree to the <a class="font-medium text-primary hover:underline" href="#">Terms and Conditions</a>
+</label>
+</div>
+<div class="pt-6">
+<button class="w-full rounded-xl bg-primary px-5 py-4 text-base font-bold text-background-dark shadow-sm transition hover:bg-primary/90" type="submit">
+              Sign Up
+            </button>
+</div>
+</form>
+</main>
+<footer class="p-6 text-center">
+<p class="text-sm text-gray-500 dark:text-gray-400">
+          Already have an account?
+          <a class="font-medium text-primary hover:underline" href="#">Sign In</a>
+</p>
+</footer>
+</div>
+
+</body></html>

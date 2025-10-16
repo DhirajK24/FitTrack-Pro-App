@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              "display": ["Lexend"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-screen flex-col">
+<header class="flex items-center p-4">
+<button class="text-gray-800 dark:text-gray-200">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Consistency</h1>
+<div class="w-6"></div>
+</header>
+<main class="flex-1 overflow-y-auto px-4 pb-4">
+<div class="mx-auto mb-6 max-w-sm">
+<div class="flex rounded-lg bg-background-dark/50 dark:bg-background-light/5 p-1">
+<label class="flex-1 cursor-pointer">
+<input checked="" class="peer sr-only" name="view" type="radio" value="Month"/>
+<span class="block rounded-md bg-transparent py-1.5 text-center text-sm font-medium text-gray-500 peer-checked:bg-background-light dark:peer-checked:bg-background-dark peer-checked:text-gray-900 dark:peer-checked:text-white">Month</span>
+</label>
+<label class="flex-1 cursor-pointer">
+<input class="peer sr-only" name="view" type="radio" value="Year"/>
+<span class="block rounded-md bg-transparent py-1.5 text-center text-sm font-medium text-gray-500 peer-checked:bg-background-light dark:peer-checked:bg-background-dark peer-checked:text-gray-900 dark:peer-checked:text-white">Year</span>
+</label>
+</div>
+</div>
+<div class="space-y-6">
+<div>
+<div class="mb-2 flex items-center justify-between">
+<button class="rounded-full p-2 text-gray-600 hover:bg-primary/20 dark:text-gray-400 dark:hover:bg-primary/30">
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+</button>
+<h2 class="text-base font-bold text-gray-900 dark:text-white">October 2024</h2>
+<button class="rounded-full p-2 text-gray-600 hover:bg-primary/20 dark:text-gray-400 dark:hover:bg-primary/30">
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<div class="py-2 text-xs font-bold text-gray-500">S</div>
+<div class="py-2 text-xs font-bold text-gray-500">M</div>
+<div class="py-2 text-xs font-bold text-gray-500">T</div>
+<div class="py-2 text-xs font-bold text-gray-500">W</div>
+<div class="py-2 text-xs font-bold text-gray-500">T</div>
+<div class="py-2 text-xs font-bold text-gray-500">F</div>
+<div class="py-2 text-xs font-bold text-gray-500">S</div>
+<div class="col-start-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">1</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">2</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-sm text-primary dark:bg-primary/30">3</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">4</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white">5</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">6</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">7</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">8</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-sm text-primary dark:bg-primary/30">9</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">10</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">11</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">12</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">13</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">14</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">15</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">16</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white">17</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">18</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">19</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">20</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">21</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">22</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-sm text-primary dark:bg-primary/30">23</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">24</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">25</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">26</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">27</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">28</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">29</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">30</button>
+</div>
+<div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-sm text-gray-800 hover:bg-primary/20 dark:text-gray-200 dark:hover:bg-primary/30">31</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-background-dark/50 bg-background-light px-4 pt-3 pb-5 dark:border-background-light/10 dark:bg-background-dark/50">
+<nav class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+</svg>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z"></path>
+</svg>
+<span class="text-xs font-medium">Workouts</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M180,144H160V112h20a36,36,0,1,0-36-36V96H112V76a36,36,0,1,0-36,36H96v32H76a36,36,0,1,0,36,36V160h32v20a36,36,0,1,0,36-36ZM160,76a20,20,0,1,1,20,20H160ZM56,76a20,20,0,0,1,40,0V96H76A20,20,0,0,1,56,76ZM96,180a20,20,0,1,1-20-20H96Zm16-68h32v32H112Zm68,88a20,20,0,0,1-20-20V160h20a20,20,0,0,1,0,40Z"></path>
+</svg>
+<span class="text-xs font-medium">Nutrition</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

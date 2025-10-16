@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#79e43f",
+            "background-light": "#f7f8f6",
+            "background-dark": "#172111",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4">
+<div class="flex items-center justify-between">
+<button class="flex size-10 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white flex-1 text-center">Workout Log</h1>
+<div class="size-10"></div>
+</div>
+</header>
+<main class="px-4 pb-4">
+<section class="mt-4">
+<h2 class="text-xl font-bold text-black dark:text-white mb-3">Routine</h2>
+<div class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined text-3xl">fitness_center</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-black dark:text-white">Quick Start</p>
+<p class="text-sm text-black/60 dark:text-white/60">Full Body</p>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-xl font-bold text-black dark:text-white">Exercises</h2>
+<button class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined">add_circle_outline</span>
+<span>Add</span>
+</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDb_Uue8j9L6MAzIMfdfEkLdIw4YLQgDb1JiCYYDmKs9XfnaKJ8lsJrJ5DtMGBKB3O5bgZKEozyTZtD3VmIOcUbB8uniQTZz21Aaq8LQrqNDfvr8TBreRY5ZVs1SXsD0Lwa_RNUv-MlF8XP_DpUX6j38cvgo7IAWmTUETgb9ETYMqbroBb_23soPbhAK_kwvTirmvOzsWFYVIx5EazR_HdZ720HWK0zQ4R2BC-TegKpovz-3jJhZRIZwclEdL2tfSqQxYaOV53f7Bwj");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Bench Press</p>
+<p class="text-sm text-black/60 dark:text-white/60">Chest • Barbell</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCXElITT3yZpCikMdxpm8ImpL02A-HuERQhZOzknD5_rbPzCXvG8H4O4JqD6fL71Kngnq9kmad9qgBqZi65KVla8NYX74Ag-2tQomsnxlg3dcb2xKm4vbyIgwBjZZw9ZYitwLiKQ2IdR_syHZPy0IFx25926X9a8cZ1Exz7Aoz32SYCzQqBl0RyZhuClufSF7iBomPGEo2pS_i5aR0WStJa1WoQmIaxZqbXuSUq_1u7WmeyjaiOR1OTQQmFY5qRhkd52o6_npu03JY");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Squats</p>
+<p class="text-sm text-black/60 dark:text-white/60">Legs • Dumbbells</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBA-Hp8ZAPBvgJyBs_RihAt7IbyV1aM9C8EpXyi0CDnto9UeSYDqgcm1THPh-6hmw-zzvcWkEyx0WIiMgTPvyZJpJivE3xgf4ITC7VhRXEaBHzmd0Gl3DlGkwR5HCxU46Z-yDbgw4g3tBVVlcmQVeEJwE-rBMP1srl0o2NQoevwpeD7EtNvlY2uI7Czvi3SylaMs6eauIZvBoozaXrd6vWFOQEJVEV3nvmS9m9t9-eAxcnjB9dSqeD4lW8Uo3quy5-sI51yDYv_YTmE");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Shoulder Press</p>
+<p class="text-sm text-black/60 dark:text-white/60">Shoulders • Dumbbells</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9O_iqC7xIxLDbQZIbOxywS4IosNpHUqKCBnwL8MZvm4BOREPQWfWg_drIvoPDOiiPcC7Cw7YLRGT9N_jYYYd14s2IYlC3stG_eByT-vChydh3EiclSTL1akmfy18lCa1xY58D8KMDTZ2pnbn_q6_X7j5drKUA8Pn6DivEb99SiXswFt7TkSsKlrMLcSq9GT_h3lATiKSnnqYQEifHzFyk-2VzEqFl2i2cygJyGDXeC7UAHgMzjscPF5bGP7tYm5tdYM7Cu2y4nOZc");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Pull-ups</p>
+<p class="text-sm text-black/60 dark:text-white/60">Back • Pull-up Bar</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAd_LDXo2lI0FSEQgcYN8Fc7Evk_XVhTZQywzrtec0zUuVupNK8cd8q73EiKISU1HYpRk_p7BkuBqekqr9FNUTbPgdfSpwO2XoWvuQ5vyXqw7nJog37if9fiJ3_1gF0siJCBbn-COUygwMgz_eHsOS_P9UDQW-_SQdOsyc_4nRGca8nRXhwzCUaHJufyT0L0h5rKWaaPwDItB83P4AZrRk27dQLvCeeoRqgNZwG9CIx9eJu8mp41I0usq60cfSEejQqEhYqKi5gyzc_");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Tricep Pushdowns</p>
+<p class="text-sm text-black/60 dark:text-white/60">Triceps • Cable Machine</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-background-light dark:bg-black/20 p-3 shadow-sm dark:shadow-none">
+<div class="size-20 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFFUdf8BZZzhoAxQHGqKmYYI5wGU1i7eBvd3mf5-F1Kmo5pb84hAQpyWmxfsYem31v-wygb1Mmkl9EBzQXfB6Tpx3Sy8dlQzatWnRcWoX-DxCerdhhgW8GeWcru2ElKgvXibY-ks95Ly63dHx52nh3TgjUny-Y-LTQJ0JoMA5_hYizYrNYbcx9IAP1_mA6Y1lu_WOM54xre3gISj7LoFrsqoqFZ1e3chl4l5dV1I4IrZbRQNl2ChoQeyMf1DxNxlIJdz1FMSvefOve");'></div>
+<div class="flex-1">
+<p class="font-semibold text-black dark:text-white">Bicep Curls</p>
+<p class="text-sm text-black/60 dark:text-white/60">Biceps • Barbell</p>
+<p class="mt-1 text-sm font-medium text-primary">3 sets</p>
+</div>
+<button class="flex size-8 items-center justify-center rounded-full text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined">drag_indicator</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm pt-3 pb-5">
+<div class="flex flex-col sm:flex-row gap-3 px-4">
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-primary/20 dark:bg-primary/30 text-primary font-bold">
+          Add Exercise
+        </button>
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-primary text-background-dark font-bold">
+          Start Workout
+        </button>
+</div>
+</footer>
+</div>
+
+</body></html>

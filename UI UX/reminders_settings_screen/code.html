@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reminders Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#79e43f", "background-light": "#f7f8f6", "background-dark": "#172111"}, fontFamily: {display: "Lexend"}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}}}};</script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex h-full min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-slate-200/50 bg-background-light/80 p-4 backdrop-blur-sm dark:border-slate-800/50 dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 hover:bg-slate-200 dark:text-slate-400 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined"> arrow_back_ios_new </span>
+</button>
+<h1 class="text-lg font-bold text-slate-900 dark:text-white">Reminders</h1>
+<div class="h-10 w-10"></div>
+</header>
+<main class="flex-1 px-4 py-6">
+<div class="space-y-8">
+<section>
+<h2 class="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Workout</h2>
+<div class="divide-y divide-slate-200/50 rounded-lg bg-white/5 dark:divide-slate-800/50">
+<div class="flex items-center justify-between p-4">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Workout Reminders</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Get notified when it's time to hit the gym.</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-slate-300 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:bg-slate-700 dark:border-slate-600 dark:after:border-slate-500 dark:after:bg-slate-900 dark:peer-checked:bg-primary"></div>
+</label>
+</div>
+<button class="flex w-full items-center justify-between p-4 text-left hover:bg-slate-100/50 dark:hover:bg-white/5">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Workout Time</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Set your preferred workout time.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-medium text-primary">10:00 AM</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500"> chevron_right </span>
+</div>
+</button>
+</div>
+</section>
+<section>
+<h2 class="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Nutrition</h2>
+<div class="divide-y divide-slate-200/50 rounded-lg bg-white/5 dark:divide-slate-800/50">
+<div class="flex items-center justify-between p-4">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Water Intake Reminders</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Stay hydrated throughout the day.</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-slate-300 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:bg-slate-700 dark:border-slate-600 dark:after:border-slate-500 dark:after:bg-slate-900 dark:peer-checked:bg-primary"></div>
+</label>
+</div>
+<button class="flex w-full items-center justify-between p-4 text-left hover:bg-slate-100/50 dark:hover:bg-white/5">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Frequency</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Set reminder frequency.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-medium text-primary">Every 2 hours</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500"> chevron_right </span>
+</div>
+</button>
+</div>
+</section>
+<section>
+<h2 class="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Wellness</h2>
+<div class="divide-y divide-slate-200/50 rounded-lg bg-white/5 dark:divide-slate-800/50">
+<div class="flex items-center justify-between p-4">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Wind-Down Reminders</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Prepare for a restful night's sleep.</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-slate-300 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:bg-slate-700 dark:border-slate-600 dark:after:border-slate-500 dark:after:bg-slate-900 dark:peer-checked:bg-primary"></div>
+</label>
+</div>
+<button class="flex w-full items-center justify-between p-4 text-left hover:bg-slate-100/50 dark:hover:bg-white/5">
+<div class="flex-1">
+<p class="font-medium text-slate-900 dark:text-white">Wind-Down Time</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Set your preferred wind-down time.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-medium text-primary">9:00 PM</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500"> chevron_right </span>
+</div>
+</button>
+</div>
+</section>
+<div class="rounded-lg bg-slate-200/50 p-4 dark:bg-slate-800/50">
+<p class="text-center text-xs text-slate-500 dark:text-slate-400">Note: Local notifications are handled via FCM scheduled from Cloud Functions.</p>
+</div>
+</div>
+</main>
+<footer class="safe-area-bottom sticky bottom-0 border-t border-slate-200/50 bg-background-light/80 backdrop-blur-sm dark:border-slate-800/50 dark:bg-background-dark/80">
+<nav class="flex items-center justify-around p-2">
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> dashboard </span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> fitness_center </span>
+<span class="text-xs font-medium">Workouts</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> restaurant </span>
+<span class="text-xs font-medium">Nutrition</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-lg bg-primary/10 p-2 text-primary dark:bg-primary/20" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1"> person </span>
+<span class="text-xs font-bold">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

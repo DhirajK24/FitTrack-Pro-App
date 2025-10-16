@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .dark .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-200">
+<div class="flex h-screen flex-col">
+<header class="flex items-center justify-between p-4">
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-3xl"> arrow_back_ios_new </span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold">Profile</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex-1 overflow-y-auto px-4">
+<div class="mx-auto max-w-md space-y-6 py-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="name">Name</label>
+<input class="w-full rounded-xl border-0 bg-primary/20 dark:bg-primary/10 p-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary" id="name" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="dob">Date of Birth</label>
+<input class="w-full rounded-xl border-0 bg-primary/20 dark:bg-primary/10 p-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary" id="dob" placeholder="Select your date of birth" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="gender">Gender</label>
+<select class="form-select w-full appearance-none rounded-xl border-0 bg-primary/20 dark:bg-primary/10 p-4 text-lg text-gray-900 dark:text-white focus:ring-2 focus:ring-primary" id="gender">
+<option value="">Select your gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="non-binary">Non-binary</option>
+<option value="prefer-not-to-say">Prefer not to say</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="height">Height</label>
+<input class="w-full rounded-xl border-0 bg-primary/20 dark:bg-primary/10 p-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary" id="height" placeholder="Enter your height" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="weight">Weight</label>
+<input class="w-full rounded-xl border-0 bg-primary/20 dark:bg-primary/10 p-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary" id="weight" placeholder="Enter your weight" type="text"/>
+</div>
+</div>
+</main>
+<footer class="p-4">
+<div class="mx-auto max-w-md">
+<div class="flex items-center justify-center space-x-3 py-4">
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+</div>
+<button class="w-full rounded-xl bg-primary py-4 text-center font-bold text-background-dark">Next</button>
+<div class="h-safe-area-bottom"></div>
+</div>
+</footer>
+</div>
+</body></html>

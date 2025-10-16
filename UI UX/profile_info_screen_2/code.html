@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+              "card-dark": "#202D1A",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .dark .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      }
+    </style>
+<style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-200">
+<div class="flex h-screen flex-col">
+<header class="flex items-center justify-between p-4">
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-3xl">
+            arrow_back_ios_new
+          </span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold">New Routine</h1>
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-3xl"> more_horiz </span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto px-4">
+<div class="mx-auto max-w-md space-y-6 py-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="routine-name">Routine Name</label>
+<input class="w-full rounded-xl border-0 bg-primary/20 dark:bg-card-dark p-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary" id="routine-name" placeholder="e.g. 'Leg Day'" type="text" value="Upper Body Strength"/>
+</div>
+<div class="space-y-4">
+<h2 class="text-lg font-semibold">Exercises</h2>
+<div class="space-y-3">
+<div class="flex items-center space-x-4 rounded-xl bg-card-dark p-3">
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> drag_handle </span>
+</button>
+<div class="flex-1">
+<p class="font-medium text-white">Bench Press</p>
+<p class="text-sm text-gray-400">3 sets x 8-12 reps</p>
+</div>
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> edit </span>
+</button>
+<button class="text-red-500">
+<span class="material-symbols-outlined"> delete </span>
+</button>
+</div>
+<div class="flex items-center space-x-4 rounded-xl bg-card-dark p-3">
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> drag_handle </span>
+</button>
+<div class="flex-1">
+<p class="font-medium text-white">Pull-ups</p>
+<p class="text-sm text-gray-400">3 sets x AMRAP</p>
+</div>
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> edit </span>
+</button>
+<button class="text-red-500">
+<span class="material-symbols-outlined"> delete </span>
+</button>
+</div>
+<div class="flex items-center space-x-4 rounded-xl bg-card-dark p-3">
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> drag_handle </span>
+</button>
+<div class="flex-1">
+<p class="font-medium text-white">Overhead Press</p>
+<p class="text-sm text-gray-400">3 sets x 8-12 reps</p>
+</div>
+<button class="text-gray-400">
+<span class="material-symbols-outlined"> edit </span>
+</button>
+<button class="text-red-500">
+<span class="material-symbols-outlined"> delete </span>
+</button>
+</div>
+</div>
+<button class="flex w-full items-center justify-center space-x-2 rounded-xl border-2 border-dashed border-primary/50 bg-transparent py-3 text-primary">
+<span class="material-symbols-outlined"> add </span>
+<span class="font-semibold">Add Exercise</span>
+</button>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="tags">Tags</label>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Strength</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Upper Body</span>
+<button class="text-primary/70">
+<span class="material-symbols-outlined"> add_circle </span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-4">
+<button class="flex flex-col items-center justify-center space-y-1 rounded-xl bg-card-dark p-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined"> content_copy </span>
+<span>Clone</span>
+</button>
+<button class="flex flex-col items-center justify-center space-y-1 rounded-xl bg-card-dark p-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined"> share </span>
+<span>Share</span>
+</button>
+<button class="flex flex-col items-center justify-center space-y-1 rounded-xl bg-card-dark p-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined"> ios_sharing </span>
+<span>Export</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="p-4">
+<div class="mx-auto max-w-md">
+<button class="w-full rounded-xl bg-primary py-4 text-center font-bold text-background-dark">
+            Save Routine
+          </button>
+<div class="h-safe-area-bottom"></div>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TC001",
+    "title": "verify_email_password_signin",
+    "description": "Test the /auth/signin endpoint to ensure users can sign in successfully using valid email and password credentials, and handle invalid credentials appropriately."
+  },
+  {
+    "id": "TC002",
+    "title": "verify_user_account_creation",
+    "description": "Test the /auth/signup endpoint to verify new user account creation with valid email and password, and validate error handling for invalid or duplicate accounts."
+  },
+  {
+    "id": "TC003",
+    "title": "verify_google_signin_functionality",
+    "description": "Test the /auth/google endpoint to confirm users can sign in using Google authentication and handle failures or cancellations gracefully."
+  },
+  {
+    "id": "TC004",
+    "title": "verify_password_reset_email_sending",
+    "description": "Test the /auth/reset-password endpoint to ensure password reset emails are sent to valid email addresses and handle invalid or unregistered emails correctly."
+  },
+  {
+    "id": "TC005",
+    "title": "verify_personal_info_submission",
+    "description": "Test the /onboarding/personal-info endpoint to verify that personal information including name, age, gender, height, and weight is saved correctly during onboarding."
+  },
+  {
+    "id": "TC006",
+    "title": "verify_user_fitness_goals_submission",
+    "description": "Test the /onboarding/goals endpoint to ensure user fitness goals such as primary goal, target weight, workout frequency, and experience level are saved accurately."
+  },
+  {
+    "id": "TC007",
+    "title": "verify_workout_history_retrieval",
+    "description": "Test the GET /workouts endpoint to confirm retrieval of user workout history with correct data and pagination if applicable."
+  },
+  {
+    "id": "TC008",
+    "title": "verify_workout_creation",
+    "description": "Test the POST /workouts endpoint to validate creation of new workouts with detailed exercise data including sets, reps, weight, and intensity."
+  },
+  {
+    "id": "TC009",
+    "title": "verify_workout_update_and_deletion",
+    "description": "Test the PUT and DELETE /workouts/{id} endpoints to ensure workouts can be updated and deleted correctly by workout ID."
+  },
+  {
+    "id": "TC010",
+    "title": "verify_water_intake_logging",
+    "description": "Test the POST /water/logs endpoint to verify logging of water intake with amount, source, and timestamp, and validate data accuracy."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "backend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8080",
+  "backendAuthType": "basic token",
+  "backendUsername": "dk@gmail.com",
+  "backendPassword": "1234@1234",
+  "executionArgs": {
+    "projectName": "fit_final_1",
+    "projectPath": "H:\\Android App's\\FitTrack Pro App\\FItTrack Pro _MVP_2\\FitTrack_pro_Final_1\\fit_final_1",
+    "testIds": [],
+    "additionalInstruction": "Test the complete FitTrack Pro fitness app including authentication, onboarding, workout tracking, water/sleep tracking, AI nutrition coach, and analytics dashboard. Focus on user flows, data persistence, Firebase integration, and UI responsiveness.",
+    "envs": {
+      "API_KEY": "sk-user-Ffu1BlzA_ZUHqVMAh4CRnBQob_Bk0xUh4uScM3cg-IXJagPng1D_GHbxRd6TgR4Foq40Nq-t4o_xgc9lH-kGFl7bJYwTLSbedRE0OKA3K7sVtHQKsUQh3OwP9aq9uvdt6Eg"
+    }
+  }
+}

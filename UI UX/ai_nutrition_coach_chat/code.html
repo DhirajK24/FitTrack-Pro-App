@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nutrition Coach</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              "display": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+<div class="flex h-screen flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 p-4 backdrop-blur-sm">
+<button class="flex size-10 items-center justify-center rounded-full text-neutral-800 dark:text-neutral-200">
+<svg class="lucide lucide-arrow-left" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+</button>
+<h1 class="text-lg font-bold text-neutral-900 dark:text-neutral-50">Nutrition Coach</h1>
+<div class="size-10"></div>
+</header>
+<main class="flex-1 overflow-y-auto p-4">
+<div class="flex flex-col gap-6">
+<div class="flex items-end gap-3">
+<img alt="AI Coach Avatar" class="size-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIcI_u0UaB3pM6njfNn8Xe_RON0JKsS2DVET7pwT1TmzwGWCu-1PGlzaI-efdTiGnCx80BKqId9DjJO5U8FCZUKV52WiWQ7u5tzTXrJDXApoJJDVbqwO1XI7ARW3UHOLNP40aAwufTFYfdsSTRtF2XTvv4q_jaXMymZCq86WsGBilHPUnWqZD3kwXkniM_WORY0R_73NHWFis-58FujGmvPWZgMP99D-4HsK9D0CEcXjK76BjbM4yRbZplyot80-Vpe5vgnh07wPCH"/>
+<div class="flex flex-col gap-1">
+<span class="text-xs text-neutral-500 dark:text-neutral-400">AI Coach</span>
+<div class="max-w-xs rounded-lg rounded-bl-none bg-neutral-200 dark:bg-neutral-800 p-3 text-sm text-neutral-800 dark:text-neutral-200">
+<p>
+                  Hi there! I'm your AI Nutrition Coach. Let's get started by setting up your dietary preferences. What are your primary goals? (e.g., weight loss, muscle gain, general wellness)
+                </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark">
+<div class="p-4">
+<div class="relative">
+<input class="w-full rounded-full border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-900 py-3 pl-4 pr-12 text-sm text-neutral-800 dark:text-neutral-200 placeholder:text-neutral-500 dark:placeholder:text-neutral-400 focus:border-primary focus:ring-primary" placeholder="Type your response..." type="text"/>
+<button class="absolute inset-y-0 right-0 flex items-center justify-center rounded-full bg-primary px-3 text-black">
+<svg class="lucide lucide-arrow-up" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+</button>
+</div>
+</div>
+<nav class="flex justify-around border-t border-neutral-200 dark:border-neutral-800 px-2 pb-2 pt-1">
+<a class="flex flex-col items-center gap-1 p-2 text-neutral-500 dark:text-neutral-400" href="#">
+<svg class="lucide lucide-layout-grid" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M3 12h18"></path><path d="M12 3v18"></path></svg>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-neutral-500 dark:text-neutral-400" href="#">
+<svg class="lucide lucide-dumbbell" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M14.4 14.4 9.6 9.6"></path><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"></path><path d="m21.5 21.5-1.4-1.4"></path><path d="m3.9 3.9 1.4 1.4"></path><path d="M6.808 12.382a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1-2.828 2.829z"></path></svg>
+<span class="text-xs font-medium">Workouts</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-full bg-primary/20 p-2 text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.68 15.3-1.63-1.08c-.4-.27-.65-.7-.65-1.17V13h-1.5v2.05c0 .89.58 1.68 1.42 1.95l1.93 1.28c.55.37 1.22.1 1.48-.48.26-.59.02-1.3-.55-1.5zM12 9c-1.66 0-3 1.34-3 3h6c0-1.66-1.34-3-3-3zM8.07 7.05C8.32 6.41 8.94 6 9.66 6h4.68c.72 0 1.34.41 1.59 1.05l.17.45H8.24l-.17-.45z"></path></svg>
+<span class="text-xs font-medium">Nutrition</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-neutral-500 dark:text-neutral-400" href="#">
+<svg class="lucide lucide-user-2" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M14 19a6 6 0 0 0-12 0"></path><circle cx="8" cy="9" r="4"></circle></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

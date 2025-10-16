@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#79e43f",
+            "background-light": "#f7f8f6",
+            "background-dark": "#172111",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex flex-col h-screen">
+<header class="flex items-center justify-between p-4">
+<button class="p-2">
+<span class="material-symbols-outlined text-slate-800 dark:text-slate-200">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-slate-900 dark:text-white flex-1 text-center pr-10">Sign In</h1>
+</header>
+<main class="flex-1 flex flex-col justify-center px-6">
+<div class="space-y-6">
+<div class="space-y-4">
+<input class="w-full h-14 px-4 rounded-lg bg-primary/10 dark:bg-primary/20 placeholder-slate-500 dark:placeholder-slate-400 border-none focus:ring-2 focus:ring-primary" placeholder="Email" type="email"/>
+<input class="w-full h-14 px-4 rounded-lg bg-primary/10 dark:bg-primary/20 placeholder-slate-500 dark:placeholder-slate-400 border-none focus:ring-2 focus:ring-primary" placeholder="Password" type="password"/>
+</div>
+<div class="text-center">
+<a class="text-sm font-medium text-primary hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="space-y-4">
+<button class="w-full h-14 flex items-center justify-center rounded-lg bg-primary text-background-dark font-bold text-base tracking-wide">
+            Sign In
+          </button>
+<button class="w-full h-14 flex items-center justify-center gap-3 rounded-lg border border-primary/50 dark:border-primary/70 text-slate-800 dark:text-slate-200 font-bold text-base tracking-wide">
+<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_105_239)"><path d="M22.4998 12.2198C22.4998 11.3698 22.4298 10.5198 22.2798 9.6998H12.2398V14.4798H18.1798C17.9298 15.9398 17.1598 17.2098 15.9998 18.0698V20.6998H19.7898C21.5798 19.0398 22.4998 16.5998 22.4998 13.4998" fill="#4285F4"></path><path d="M12.2398 23.0001C15.3198 23.0001 17.9198 21.9601 19.7898 20.7001L15.9998 18.0701C14.9998 18.7701 13.7298 19.2201 12.2398 19.2201C9.4298 19.2201 7.0198 17.4301 6.1298 14.9701H2.2198V17.6901C4.0798 20.9101 7.8498 23.0001 12.2398 23.0001Z" fill="#34A853"></path><path d="M6.12996 14.97C5.91996 14.36 5.78996 13.71 5.78996 13C5.78996 12.29 5.91996 11.64 6.12996 11.03V8.31H2.21996C1.42996 9.87 0.999959 11.59 0.999959 13.34C0.999959 15.09 1.42996 16.81 2.21996 18.37L6.12996 14.97Z" fill="#FBBC05"></path><path d="M12.2398 6.78001C13.8698 6.78001 15.0198 7.37001 15.6598 7.97001L19.8698 3.77001C17.9098 1.95001 15.3198 0.940002 12.2398 0.940002C7.8498 0.940002 4.0798 3.03001 2.2198 6.25001L6.1298 8.97001C7.0198 6.51001 9.4298 4.72001 12.2398 4.72001" fill="#EA4335"></path></g><defs><clipPath id="clip0_105_239"><rect fill="white" height="24" width="24"></rect></clipPath></defs></svg>
+            Sign in with Google
+          </button>
+</div>
+</div>
+</main>
+<footer class="p-6 text-center">
+<p class="text-sm">
+<span class="text-slate-500 dark:text-slate-400">Don't have an account?</span>
+<a class="font-medium text-primary hover:underline" href="#"> Sign Up</a>
+</p>
+</footer>
+</div>
+
+</body></html>

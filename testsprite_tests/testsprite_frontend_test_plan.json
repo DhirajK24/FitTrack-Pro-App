@@ -1,0 +1,550 @@
+[
+  {
+    "id": "TC001",
+    "title": "Email/Password Sign In Success",
+    "description": "Verify that a user can successfully sign in using valid email and password credentials, and session is maintained.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to sign in screen"
+      },
+      {
+        "type": "action",
+        "description": "Input valid email and correct password"
+      },
+      {
+        "type": "action",
+        "description": "Click sign in button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user is successfully authenticated and redirected to the dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user session persists after app restart"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Google Sign-In Authentication",
+    "description": "Verify users can authenticate via Google Sign-In and maintain session after app closure.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to sign in screen"
+      },
+      {
+        "type": "action",
+        "description": "Select Google Sign-In option"
+      },
+      {
+        "type": "action",
+        "description": "Authenticate with valid Google account credentials"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify successful authentication and dashboard access"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify session is persisted upon app restart"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Anonymous Login Functionality",
+    "description": "Ensure users can log in anonymously and access basic app features without personal account.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to sign in screen"
+      },
+      {
+        "type": "action",
+        "description": "Select anonymous login option"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify access to app dashboard with limited features"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Password Reset Email",
+    "description": "Verify password reset email can be requested and handled correctly for registered email addresses.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to password reset screen"
+      },
+      {
+        "type": "action",
+        "description": "Input registered email address"
+      },
+      {
+        "type": "action",
+        "description": "Click send password reset email button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify confirmation message sent"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify password reset email is received"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Multi-step Onboarding Completion",
+    "description": "Verify new users can complete full onboarding including personal info, fitness stats, goals, and privacy consent successfully.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Start onboarding for new user"
+      },
+      {
+        "type": "action",
+        "description": "Fill in personal information (name, age, gender, height, weight)"
+      },
+      {
+        "type": "action",
+        "description": "Enter fitness stats and select goals"
+      },
+      {
+        "type": "action",
+        "description": "Provide privacy consent"
+      },
+      {
+        "type": "action",
+        "description": "Complete onboarding process"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all personal info and goals are saved correctly to the user profile"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Workout Logging with Valid Data",
+    "description": "Verify users can create and save workouts with valid exercises, sets, weights, reps, and intensity data.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to workout logger"
+      },
+      {
+        "type": "action",
+        "description": "Create new workout session"
+      },
+      {
+        "type": "action",
+        "description": "Add exercises from library with sets, reps, weights, intensity"
+      },
+      {
+        "type": "action",
+        "description": "Save workout"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify workout saved and appears in history"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Workout Logging with Custom Exercise Addition",
+    "description": "Verify users can add custom exercises not in library and log them within workouts.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to workout logger"
+      },
+      {
+        "type": "action",
+        "description": "Create new workout"
+      },
+      {
+        "type": "action",
+        "description": "Add custom exercise with all required fields"
+      },
+      {
+        "type": "action",
+        "description": "Log sets and reps for custom exercise"
+      },
+      {
+        "type": "action",
+        "description": "Save workout"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify custom exercise is saved and visible in workout history"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Exercise Library Load and Categorization",
+    "description": "Verify exercise library loads fully with correct muscle group and equipment categories along with media demonstrations.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to exercise library screen"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all exercises are loaded with correct categorization"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify media demonstrations (images/videos) are visible for exercises"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Water Intake Logging and Visualization",
+    "description": "Ensure users can log water intake with different sources, visualize progress, and modify daily goals.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to water tracker"
+      },
+      {
+        "type": "action",
+        "description": "Log water intake with 'water' source"
+      },
+      {
+        "type": "action",
+        "description": "Log coffee and tea intake entries"
+      },
+      {
+        "type": "action",
+        "description": "Adjust daily water intake goal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify intake logs are accurate and progress visualization updates accordingly"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify reminders are fired if enabled"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Sleep Tracking Input and Advanced Metric Capture",
+    "description": "Verify users can input bedtime, wake time, sleep quality, notes, and advanced screen-off detection metric is recorded.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to sleep tracker"
+      },
+      {
+        "type": "action",
+        "description": "Log a sleep session with valid bedtime, wake time"
+      },
+      {
+        "type": "action",
+        "description": "Input sleep quality rating and notes"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify sleep session is saved and screen-off detection metric is captured"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify sleep data appears correctly in progress visualization"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "AI Nutrition Coach Conversational Interface",
+    "description": "Verify users can interact with AI nutrition coach chat interface, receive culturally tailored meal plans and grocery lists.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to AI nutrition chat screen"
+      },
+      {
+        "type": "action",
+        "description": "Send message requesting meal plan with dietary and cultural preferences"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify AI responds with relevant meal plans, recipes, and grocery lists including macronutrient info"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Dashboard Real-Time Data Display",
+    "description": "Verify dashboard accurately displays today's workout overview, weekly charts, water intake, sleep logs, and motivational content.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to main dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify workout overview matches logged exercise data"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify weekly activity charts reflect correct historical data"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify water intake and sleep logs are current"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify motivational content is visible and relevant"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Analytics Filtering and Visualization Accuracy",
+    "description": "Verify analytics dashboard filters data by week, month, year and accurately presents workout, water, sleep, and progress metrics.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to analytics dashboard"
+      },
+      {
+        "type": "action",
+        "description": "Apply filters for weekly, monthly, and yearly data"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify charts and metrics update accordingly for filtered periods"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify workout, water, sleep analytics reflect logged data correctly"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Smart Reminders Functionality",
+    "description": "Verify reminders for workouts, water intake, and sleep reminders trigger at user-configured times and can be toggled on or off.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to settings and enable reminders with specific schedules"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify reminders fire at the specified times"
+      },
+      {
+        "type": "action",
+        "description": "Disable reminders in settings"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify reminders no longer appear"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "User Settings Persistence and Effect",
+    "description": "Verify changes to notification preferences, units (metric/imperial), and theme (light/dark/system) are saved and applied across app.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to settings screen"
+      },
+      {
+        "type": "action",
+        "description": "Change notifications setting, units, and theme preferences"
+      },
+      {
+        "type": "action",
+        "description": "Save settings and restart app"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify settings persist after restart"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify app displays units and theme according to saved preferences"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Offline-First Data Synchronization",
+    "description": "Verify user data can be created and edited offline and syncs correctly with Firebase backend when connection is restored with no data loss or conflicts.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Disable internet connectivity"
+      },
+      {
+        "type": "action",
+        "description": "Log workout, water intake, and sleep data offline"
+      },
+      {
+        "type": "action",
+        "description": "Reconnect internet"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all offline changes sync successfully to backend"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no data conflicts or loss occur"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Onboarding Invalid Data Handling",
+    "description": "Test input validation and error handling during onboarding when users enter invalid personal info or skip required steps.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Start onboarding"
+      },
+      {
+        "type": "action",
+        "description": "Input invalid values for age (e.g. negative, extreme number)"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation error messages are shown and navigation prevented"
+      },
+      {
+        "type": "action",
+        "description": "Attempt to skip mandatory goal consent step"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user cannot proceed without giving privacy consent"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Workout Logging Edge Cases",
+    "description": "Verify workout logger handles edge cases including zero sets, zero reps, maximum weight values, and invalid intensity ratings.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Create workout with 0 sets or 0 reps"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify error message shown and workout cannot be saved"
+      },
+      {
+        "type": "action",
+        "description": "Add sets with maximum expected weight and intensity rating > 10"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify intensity rating capped at 10 and weight accepted if logical"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "Water Tracker Input Validation",
+    "description": "Verify water intake logging prevents invalid inputs like negative amounts or unsupported sources.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Attempt to log water intake with negative amount"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation error prevents logging"
+      },
+      {
+        "type": "action",
+        "description": "Attempt to log water intake with unsupported source string"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify input rejected or defaulted"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "AI Nutrition Coach Response Validity and Timeout",
+    "description": "Verify AI nutrition coach handles user messages correctly, returns valid meal plans, and manages timeouts or API failures gracefully.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Send a valid nutrition query to AI coach"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify correct meal plan response received"
+      },
+      {
+        "type": "action",
+        "description": "Simulate API failure or timeout"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user is shown error message and can retry"
+      }
+    ]
+  }
+]

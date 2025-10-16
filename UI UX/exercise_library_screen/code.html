@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="text-black dark:text-white">
+<svg class="lucide lucide-arrow-left" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m12 19-7-7 7-7"></path>
+<path d="M19 12H5"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-black dark:text-white">Exercise Library</h1>
+<div class="w-6"></div>
+</header>
+<main class="flex-1 overflow-y-auto">
+<div class="p-4">
+<div class="relative">
+<svg class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-black/50 dark:text-white/50" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<path d="m21 21-4.3-4.3"></path>
+</svg>
+<input class="w-full rounded-full border border-black/10 bg-black/5 py-3 pl-10 pr-4 text-black placeholder:text-black/50 focus:border-primary focus:ring-primary dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder:text-white/50" placeholder="Search by name, muscle, equipment..." type="text"/>
+</div>
+</div>
+<div class="flex gap-2 overflow-x-auto px-4 pb-4">
+<button class="flex items-center gap-1.5 rounded-full border border-black/10 bg-background-light px-4 py-2 text-sm text-black dark:border-white/10 dark:bg-background-dark dark:text-white">
+<span>Muscle Group</span>
+<svg class="lucide lucide-chevron-down" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<button class="flex items-center gap-1.5 rounded-full border border-black/10 bg-background-light px-4 py-2 text-sm text-black dark:border-white/10 dark:bg-background-dark dark:text-white">
+<span>Equipment</span>
+<svg class="lucide lucide-chevron-down" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<button class="flex items-center gap-1.5 rounded-full border border-black/10 bg-background-light px-4 py-2 text-sm text-black dark:border-white/10 dark:bg-background-dark dark:text-white">
+<span>Difficulty</span>
+<svg class="lucide lucide-chevron-down" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+</div>
+<div class="space-y-2 px-4">
+<div class="grid grid-cols-[auto,1fr,auto,auto] items-center gap-4 rounded-lg bg-black/5 p-2 dark:bg-white/5">
+<div class="h-16 w-16 rounded bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYS983wm2vxpg1Mp6IgjC8o4WthMSMkW9TiOc4RNz4WZWGhqjDK4Wsh464XwNfjiSt8_dQXZAH7pGgt2Ty8_MTEraVuprsruPrYxATJA3xPaZqKbDtIZGosUrupYKpZpjsxxMPvzBVZeHLlrm_X9GP04dUjJHpzhnsR41XvBArGixx_FELJ0MSDiqynJYj3f3tQ_o1z2qnhGo5jSgBalWGHYUOgSaoJM4qt-0W9bSSs3CnUVUowYtH2cTugSF7ZjIl8glQCyUSlHtq");'></div>
+<div>
+<p class="font-semibold text-black dark:text-white">Bench Press</p>
+<p class="text-sm text-black/60 dark:text-white/60">Chest, Triceps</p>
+</div>
+<button class="text-black/50 transition-colors hover:text-primary dark:text-white/50 dark:hover:text-primary">
+<svg class="lucide lucide-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+</svg>
+</button>
+<button class="rounded-full bg-primary p-2 text-black">
+<svg class="lucide lucide-plus" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="M12 5v14"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-[auto,1fr,auto,auto] items-center gap-4 rounded-lg bg-black/5 p-2 dark:bg-white/5">
+<div class="h-16 w-16 rounded bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdk8TNpz_FwJEXx-hHXy52hfU-bKr0Aw0YdCWgvCEWGejlSdaX0vdtSrzFyJ98sqcBKkNaTys_4tw1iZ1O7LP5iB18RQTXn8U8-Jva6u3vznX4ctK_U_IlahyTgk9OBnBXDN7TlkX-2v9BiJ-jecBlmfVPimGryYnQzsBKda1u_kk8efItmzKmLT3hgw7BIojF_dluVroaEMfrgR1YH6QnLiUNueoa2o9l1qHb3IW7dy9syv---WB0JYCPrGgHxsVKJtMweJAQ3ySn");'></div>
+<div>
+<p class="font-semibold text-black dark:text-white">Pull-ups</p>
+<p class="text-sm text-black/60 dark:text-white/60">Back, Biceps</p>
+</div>
+<button class="text-primary">
+<svg class="lucide lucide-heart" fill="currentColor" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+</svg>
+</button>
+<button class="rounded-full bg-primary p-2 text-black">
+<svg class="lucide lucide-plus" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="M12 5v14"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-[auto,1fr,auto,auto] items-center gap-4 rounded-lg bg-black/5 p-2 dark:bg-white/5">
+<div class="h-16 w-16 rounded bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUNENhGWEWtH_N_3FgUzqFDLCJ-z6bbkdIX8p1qV4VwgyUM7O91IWTlMZiGzhpu9uWIZZt-pc8ZJaEVZcv16jJ0Kydzg0PooyAzWPxZQuizimmetdBSr0ahmdLHxo0wQ4gdqp3godZ8HbsQrOS2BFUAdb5_OVtNcpf0ZnSJH8dohO8zVIDAMRAYvx89Z1OE4imEISwOsrbwiHbNd2loBKfo9XtlUZNFp_DuBPh6fHzvwPyljSh8C5jmO6ccL-QgcpYUuIUY1zf9eRP");'></div>
+<div>
+<p class="font-semibold text-black dark:text-white">Squats</p>
+<p class="text-sm text-black/60 dark:text-white/60">Legs, Glutes</p>
+</div>
+<button class="text-black/50 transition-colors hover:text-primary dark:text-white/50 dark:hover:text-primary">
+<svg class="lucide lucide-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+</svg>
+</button>
+<button class="rounded-full bg-primary p-2 text-black">
+<svg class="lucide lucide-plus" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="M12 5v14"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-[auto,1fr,auto,auto] items-center gap-4 rounded-lg bg-black/5 p-2 dark:bg-white/5">
+<div class="h-16 w-16 rounded bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBuvmUipknThlVW72wp2AeWQNdZt8dwG73zcz0uqjJkhkmw17AXMb0CcUNkXWimdguNI3gArTYmYr0JXa9GXMcNlVj3zQ25qtjr3aRxbhLmUAjXOnkGNG8ZAWLegRlfSLHAtAOmdcJncf3qphcyYPUbGIpGHQOvvQcFezF3_zWJgSPikymJpsZk2cweXaO62U1nDze1mRzWVXxnCOVpzg18GiZgrfm8wjTCG9xqGOPxPshL9liQGIXCsmxmPDzXuHgLWJL02Mi-5hTl");'></div>
+<div>
+<p class="font-semibold text-black dark:text-white">Overhead Press</p>
+<p class="text-sm text-black/60 dark:text-white/60">Shoulders, Triceps</p>
+</div>
+<button class="text-black/50 transition-colors hover:text-primary dark:text-white/50 dark:hover:text-primary">
+<svg class="lucide lucide-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+</svg>
+</button>
+<button class="rounded-full bg-primary p-2 text-black">
+<svg class="lucide lucide-plus" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="M12 5v14"></path>
+</svg>
+</button>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 border-t border-black/10 bg-background-light/80 pb-safe-bottom backdrop-blur-sm dark:border-white/10 dark:bg-background-dark/80">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 p-2 text-black/60 dark:text-white/60" href="#">
+<svg class="lucide lucide-home" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-full bg-primary/20 p-2 text-primary dark:bg-primary/30" href="#">
+<svg class="lucide lucide-barbell" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 12h20"></path>
+<path d="M4 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+<path d="M14 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+<path d="M4 18v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"></path>
+<path d="M14 18v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"></path>
+</svg>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/60 dark:text-white/60" href="#">
+<svg class="lucide lucide-compass" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+</svg>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/60 dark:text-white/60" href="#">
+<svg class="lucide lucide-user" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

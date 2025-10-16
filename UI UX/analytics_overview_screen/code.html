@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+      .font-display {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white">Analytics</h1>
+<div class="w-10"></div>
+</header>
+<div class="border-b border-white/10">
+<nav class="flex justify-around px-4">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary py-3 px-4 text-center text-sm font-semibold text-primary" href="#"> Weekly </a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent py-3 px-4 text-center text-sm font-medium text-black/60 hover:text-primary dark:text-white/60 dark:hover:text-primary" href="#"> Monthly </a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent py-3 px-4 text-center text-sm font-medium text-black/60 hover:text-primary dark:text-white/60 dark:hover:text-primary" href="#"> Yearly </a>
+</nav>
+</div>
+<main class="p-4">
+<section class="rounded-lg bg-black/10 p-6 dark:bg-white/5">
+<div class="flex flex-col gap-1">
+<p class="text-base font-medium text-black/80 dark:text-white/80">Total Workouts</p>
+<p class="text-4xl font-bold text-black dark:text-white">12</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Last 7 Days</p>
+</div>
+<div class="mt-6 grid h-48 grid-cols-7 items-end gap-3">
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 30%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Mon</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 70%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Tue</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 70%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Wed</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary" style="height: 80%"></div>
+<p class="text-xs font-bold text-primary">Thu</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 80%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Fri</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 100%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Sat</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded bg-primary/20" style="height: 100%"></div>
+<p class="text-xs font-medium text-black/60 dark:text-white/60">Sun</p>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-black dark:text-white">Personal Records</h2>
+<div class="mt-4 space-y-2">
+<a class="block rounded-lg bg-black/10 p-4 transition-colors hover:bg-black/20 dark:bg-white/5 dark:hover:bg-white/10" href="#">
+<div class="flex items-center justify-between gap-4">
+<div>
+<p class="font-semibold text-black dark:text-white">Bench Press</p>
+<p class="text-sm text-black/60 dark:text-white/60">225 lbs</p>
+</div>
+<p class="text-sm text-black/80 dark:text-white/80">10/26/2024</p>
+</div>
+</a>
+<a class="block rounded-lg bg-black/10 p-4 transition-colors hover:bg-black/20 dark:bg-white/5 dark:hover:bg-white/10" href="#">
+<div class="flex items-center justify-between gap-4">
+<div>
+<p class="font-semibold text-black dark:text-white">Squat</p>
+<p class="text-sm text-black/60 dark:text-white/60">315 lbs</p>
+</div>
+<p class="text-sm text-black/80 dark:text-white/80">11/02/2024</p>
+</div>
+</a>
+<a class="block rounded-lg bg-black/10 p-4 transition-colors hover:bg-black/20 dark:bg-white/5 dark:hover:bg-white/10" href="#">
+<div class="flex items-center justify-between gap-4">
+<div>
+<p class="font-semibold text-black dark:text-white">Deadlift</p>
+<p class="text-sm text-black/60 dark:text-white/60">405 lbs</p>
+</div>
+<p class="text-sm text-black/80 dark:text-white/80">11/15/2024</p>
+</div>
+</a>
+</div>
+</section>
+<div class="mt-8 flex justify-end">
+<button class="rounded-full bg-primary px-6 py-3 text-sm font-bold text-background-dark">Export to CSV</button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-white/10 bg-background-light/80 pb-safe-area-bottom pt-2 backdrop-blur-sm dark:bg-background-dark/80">
+<nav class="flex justify-around">
+<a class="flex flex-1 flex-col items-center gap-1 py-1 text-primary" href="#">
+<svg class="h-6 w-6" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+</svg>
+<p class="text-xs font-bold">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 py-1 text-black/60 hover:text-primary dark:text-white/60 dark:hover:text-primary" href="#">
+<svg class="h-6 w-6" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z"></path>
+</svg>
+<p class="text-xs font-medium">Workouts</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 py-1 text-black/60 hover:text-primary dark:text-white/60 dark:hover:text-primary" href="#">
+<svg class="h-6 w-6" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,64H203.31l26.35-26.34a8,8,0,0,0-11.32-11.32L192,52.69V24a8,8,0,0,0-16,0V56.57a64,64,0,0,0-77.2,10.12l0,0,0,0,0,0c-40.1,39.39-70.25,133.08-73.19,142.45a16,16,0,0,0,21.26,21.26c9.37-2.94,103.18-33.13,142.47-73.21A64,64,0,0,0,199.43,80H232a8,8,0,0,0,0-16Zm-54.12,82c-8.94,9.12-21.25,17.8-34.85,25.73l-25.38-25.39a8,8,0,0,0-11.32,11.32l22.09,22.09c-40.87,21.19-86.32,35.42-87,35.63A7.93,7.93,0,0,0,40,216a7.93,7.93,0,0,0,.59-1.41c.29-.93,28-89.58,64-130.67l33.77,33.77a8,8,0,0,0,11.32-11.32L116.18,72.88A48,48,0,0,1,177.88,146Z"></path>
+</svg>
+<p class="text-xs font-medium">Nutrition</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 py-1 text-black/60 hover:text-primary dark:text-white/60 dark:hover:text-primary" href="#">
+<svg class="h-6 w-6" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

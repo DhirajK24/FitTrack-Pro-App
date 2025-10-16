@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Lexend"],
+            },
+            borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-background-light/80 p-4 pb-3 pt-5 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-white">
+<span class="material-symbols-outlined"> arrow_back </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-white">Personal Records</h1>
+<div class="h-10 w-10"></div>
+</header>
+<main class="p-4">
+<div class="mb-4">
+<h2 class="mb-3 text-base font-semibold text-white/80">Sort by</h2>
+<div class="flex flex-wrap gap-2">
+<button class="rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-background-dark">Lift Type</button>
+<button class="rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-white/80 transition-colors hover:bg-primary/30">Date</button>
+<button class="rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-white/80 transition-colors hover:bg-primary/30">Value</button>
+</div>
+</div>
+<div class="space-y-2">
+<a class="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10" href="#">
+<div>
+<p class="font-semibold text-white">Bench Press</p>
+<p class="text-sm text-primary">225 lbs</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-sm text-white/60">01/15/2024</p>
+<span class="material-symbols-outlined text-white/60"> chevron_right </span>
+</div>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10" href="#">
+<div>
+<p class="font-semibold text-white">Squat</p>
+<p class="text-sm text-primary">315 lbs</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-sm text-white/60">02/20/2024</p>
+<span class="material-symbols-outlined text-white/60"> chevron_right </span>
+</div>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10" href="#">
+<div>
+<p class="font-semibold text-white">Overhead Press</p>
+<p class="text-sm text-primary">135 lbs</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-sm text-white/60">03/05/2024</p>
+<span class="material-symbols-outlined text-white/60"> chevron_right </span>
+</div>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10" href="#">
+<div>
+<p class="font-semibold text-white">Deadlift</p>
+<p class="text-sm text-primary">405 lbs</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-sm text-white/60">04/10/2024</p>
+<span class="material-symbols-outlined text-white/60"> chevron_right </span>
+</div>
+</a>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-white/10 bg-background-light/80 backdrop-blur-sm dark:bg-background-dark/80">
+<nav class="flex items-center justify-around px-2 pb-4 pt-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-white/60" href="#">
+<span class="material-symbols-outlined"> home </span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-white/60" href="#">
+<span class="material-symbols-outlined"> fitness_center </span>
+<span class="text-xs font-medium">Workouts</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-white/60" href="#">
+<span class="material-symbols-outlined"> restaurant_menu </span>
+<span class="text-xs font-medium">Nutrition</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full py-1 text-primary" href="#">
+<span class="material-symbols-outlined"> account_circle </span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

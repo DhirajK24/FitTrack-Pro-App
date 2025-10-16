@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#79e43f",
+            "background-light": "#f7f8f6",
+            "background-dark": "#172111",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex flex-col">
+<div class="h-80 w-full">
+<img alt="Woman stretching in a fitness outfit." class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3YChbJkIedhYFrTRmGIwM2apIUgAvkG56SND4RPGm9UaHJZ63WGJTtfWoCy9Tqf4ELv6D3Xz6tWQRbop_TS6kdErhkAZZpjDufwEn9cIiSAmerMUtEWvvYRHNDHa4qu_Tg_GYdRG0whJ27js0HbYmgkXfy5UwvXE41U9ACvYTGIA02-c-rdb74d1pzzUdniaFVCQuEaMKH_qltzRurGOHio-uACJRCGiRLPTxPUi2Dpx_5Jz-B0uAeuR9cExRTIajx5Tq9xKEt8ue"/>
+</div>
+<div class="mt-8 px-6 text-center">
+<h1 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">Your journey to a healthier you starts here</h1>
+<p class="mt-4 text-base text-zinc-600 dark:text-zinc-400">Track your workouts, nutrition, and wellness with our AI-powered fitness app.</p>
+</div>
+</div>
+<div class="px-6 pb-8 pt-12">
+<div class="flex w-full items-center justify-center gap-3 pb-8">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+</div>
+<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary px-5 text-zinc-900 text-base font-bold leading-normal">
+<span class="truncate">Continue</span>
+</button>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,144 @@
+{
+  "colors": {
+    "brandDark": "#0F0F0F",
+    "surface": "#202020",
+    "accent1": "#5DD62C",
+    "accent2": "#337418",
+    "textLight": "#F8F8F8",
+    "textMuted": "#9CA3AF",
+    "textSecondary": "#6B7280",
+    "border": "#374151",
+    "error": "#EF4444",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "info": "#3B82F6"
+  },
+  "typography": {
+    "fontFamily": "Inter",
+    "sizes": {
+      "h1": 28,
+      "h2": 22,
+      "h3": 18,
+      "h4": 16,
+      "body": 14,
+      "caption": 12,
+      "small": 10
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semiBold": 600,
+      "bold": 700,
+      "extraBold": 800
+    }
+  },
+  "spacing": {
+    "baseline": 8,
+    "screenPadding": 16,
+    "values": {
+      "0": 0,
+      "1": 4,
+      "2": 8,
+      "3": 12,
+      "4": 16,
+      "5": 20,
+      "6": 24,
+      "8": 32,
+      "10": 40,
+      "12": 48,
+      "16": 64,
+      "20": 80
+    }
+  },
+  "radius": {
+    "small": 8,
+    "medium": 12,
+    "large": 16,
+    "xLarge": 18,
+    "button": 14,
+    "card": 18,
+    "full": 999
+  },
+  "elevation": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "4": 4,
+    "8": 8,
+    "16": 16
+  },
+  "shadows": {
+    "soft": {
+      "color": "#0000001A",
+      "offset": [0, 2],
+      "blurRadius": 8,
+      "spreadRadius": 0
+    },
+    "medium": {
+      "color": "#0000001A",
+      "offset": [0, 4],
+      "blurRadius": 12,
+      "spreadRadius": 0
+    },
+    "strong": {
+      "color": "#0000001A",
+      "offset": [0, 8],
+      "blurRadius": 24,
+      "spreadRadius": 0
+    },
+    "glow": {
+      "color": "#5DD62C1A",
+      "offset": [0, 0],
+      "blurRadius": 12,
+      "spreadRadius": 0
+    }
+  },
+  "components": {
+    "button": {
+      "height": 48,
+      "padding": {
+        "horizontal": 24,
+        "vertical": 12
+      }
+    },
+    "input": {
+      "height": 48,
+      "padding": {
+        "horizontal": 16,
+        "vertical": 12
+      }
+    },
+    "card": {
+      "padding": 16,
+      "radius": 18
+    },
+    "appBar": {
+      "height": 56
+    },
+    "bottomNav": {
+      "height": 60
+    },
+    "fab": {
+      "size": 56
+    }
+  },
+  "animations": {
+    "durations": {
+      "fast": 200,
+      "medium": 300,
+      "slow": 500
+    },
+    "curves": {
+      "ease": "easeInOut",
+      "easeOut": "easeOut",
+      "easeIn": "easeIn",
+      "bounce": "bounceOut"
+    }
+  },
+  "breakpoints": {
+    "mobile": 600,
+    "tablet": 900,
+    "desktop": 1200
+  }
+}

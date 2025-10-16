@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#79e43f",
+              "background-light": "#f7f8f6",
+              "background-dark": "#172111",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .toggle-checkbox:checked {
+        right: 0.125rem;
+        background-color: white;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #79e43f;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex h-screen flex-col justify-between">
+<div class="flex-grow">
+<header class="flex items-center justify-between p-4">
+<button class="text-black dark:text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white">Permissions</h1>
+<div class="w-6"></div>
+</header>
+<div class="flex justify-center gap-2 py-4">
+<div class="h-2 w-2 rounded-full bg-primary/20"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20"></div>
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+</div>
+<main class="px-4 pt-6">
+<h2 class="text-2xl font-bold text-black dark:text-white">Privacy &amp; Notifications</h2>
+<p class="mt-2 text-zinc-600 dark:text-zinc-400">To enhance your experience, we need your consent for privacy and notifications.</p>
+<div class="mt-8 space-y-4">
+<div class="flex items-center justify-between rounded-lg bg-background-dark/50 p-4 dark:bg-background-light/5">
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-black dark:text-white">Enable Notifications</h3>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">Reminders, updates, and personalized content.</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input class="toggle-checkbox absolute h-7 w-7 cursor-pointer appearance-none rounded-full bg-white transition-all duration-300" id="notifications" type="checkbox"/>
+<label class="toggle-label h-8 w-14 cursor-pointer rounded-full bg-background-dark/80 transition-colors duration-300 dark:bg-background-light/10" for="notifications"></label>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-background-dark/50 p-4 dark:bg-background-light/5">
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-black dark:text-white">Privacy Consent</h3>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">Personalize your experience.</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input checked="" class="toggle-checkbox absolute h-7 w-7 cursor-pointer appearance-none rounded-full bg-white transition-all duration-300" id="privacy" type="checkbox"/>
+<label class="toggle-label h-8 w-14 cursor-pointer rounded-full bg-background-dark/80 transition-colors duration-300 dark:bg-background-light/10" for="privacy"></label>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="p-4 pb-8">
+<button class="h-12 w-full rounded-xl bg-primary text-background-dark font-bold">Finish</button>
+</footer>
+</div>
+
+</body></html>
